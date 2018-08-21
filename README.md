@@ -1,1 +1,6 @@
-# xinjinrong_Android
+# 新金融参考_Android
+新金融参考Android版；
+使用了Tencent X5内核，实现了简单的web页面封装；
+支持文件浏览；内部链接跳转；
+集成友盟分享模块，支持社会化分享；
+
