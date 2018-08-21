@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    <FrameLayout
+        android:id="@+id/tbsContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <steelkiwi.com.library.DotsLoaderView
+        android:id="@+id/dotsLoaderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:dlv_item_drawable="@drawable/circle_background"
+        app:dlv_line_color="@color/point_color" />
+
+    </RelativeLayout>
+
+    <com.nomedia.beijing.xinjinrong.ownView.DragFloatActionButton
+        android:id="@+id/floatBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/menu"
+        android:onClick="clickMenu"
+        app:backgroundTint="@color/white"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:useCompatPadding="false"
+        app:rippleColor="@color/white_pressed"
+        />
+
+
+
+</RelativeLayout>
